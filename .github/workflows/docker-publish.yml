@@ -4,12 +4,8 @@ name: Docker
 # separate terms of service, privacy policy, and support
 # documentation.
 on:
-  schedule:
-    - cron: '40 7 * * *'
   push:
     branches: [ "main" ]
-    tags:
-      - "v.*"
   release:
     types: [ published ]
   pull_request:
